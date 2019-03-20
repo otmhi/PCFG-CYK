@@ -39,7 +39,7 @@ To use **12** processors, on a sentence file named **test_sentences.txt**, and t
 you can run:
 
 ```
-bash run.sh --n_jobs 12 --test_frac 1.0 --test-mode --input test_sentences.txt
+bash run.sh --n_jobs 12 --train-frac 1.0 --test-mode --input test_sentences.txt
 ```
 
 ### Description of all arguments : 
