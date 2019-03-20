@@ -41,32 +41,23 @@ sh run.sh --n_jobs 12 --test-mode --input test_sentences.txt
 
 ### Description of all arguments : 
 
---data-file DATA_FILE
-                        path to the parse data file.
---train-frac TRAIN_FRAC
-                        the train percentage : default = 0.9
---emb-file EMB_FILE  
-                        path to the pickled word embedding for the oov module
+- data-file  : path to the parse data file.
 
---lev-cands LEV_CANDS
-                        number of levenstein candidates to search for (default: 2)
---emb-cands EMB_CANDS
-                        number of embedding candidates to search for (default:10)
-                        
---alpha ALPHA         coefficient for the bigram linear interpolation
-                        (default: 0.8)
-                        
---test-mode           call this argument if you want to test on new
-                      sentences, if not, the default behavior is to train on
-                      a fraction of the data and test on the rest
-                        
---input INPUT         path to the test sentences if test-mode is True
+- train-frac : the train percentage, default = 0.9.
 
---output OUTPUT       the path to the result file. if test_mode is true : it
-                      will store the parse of the test sentences, else, it
-                      will store the results on the test split.
+- emb-file : path to the pickled word embedding for the oov module.
+
+- lev-cands : number of levenstein candidates to search for (default: 2).
+
+- emb-cands : number of embedding candidates to search for (default: 20).
+                        
+- alpha : coefficient for the bigram linear interpolation (default: 0.8).
+                        
+- test-mode : call this argument if you want to test on new sentences, if not, the default behavior is to train on a fraction of the data and test on the rest.
+                        
+- input : path to the test sentences if test-mode is True.
+
+- output : the path to the result file. if test_mode is true : it will store the parse of the test sentences, else, it will store the results on the test split.
                       
---n_jobs N_JOBS       Number of processors to use, -1 means use all
-                      processors, in Windows, multiprocessing doesn't work,
-                      go for n_jobs = 1
+- n_jobs : Number of processors to use, -1 means use all processors, in Windows, multiprocessing doesn't work, go for n_jobs = 1.
 
