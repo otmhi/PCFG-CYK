@@ -45,7 +45,7 @@ bash run.sh --n_jobs 12 --test-mode --input test_sentences.txt
 
 - data-file  : path to the parse data file.
 
-- train-frac : the train percentage, default = 0.9.
+- train-frac : the train percentage, (default: 0.9).
 
 - emb-file : path to the pickled word embedding for the oov module.
 
