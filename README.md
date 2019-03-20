@@ -23,20 +23,22 @@ To get results on the test split (last 10%) of sequoia-corpus. run :
 bash run.sh
 ```
 
-This will run the script with only one processor. For multiprocessing, you can use the arg n_jobs : to run with 12 processors for example, run :
+This will run the script with only one processor. For multiprocessing, you can use the arg n_jobs : 
+
+to run with 12 processors for example, run :
 
 ```
-sh run.sh --n_jobs 12
+bash run.sh --n_jobs 12
 ```
 
 ### Results on new sentences :
 
-To do so, you need to specify that the script runs in test mode, specify the input file and the name of the output file : 
+To do so, you need to specify that the script runs in test mode, specify the input file and the name of the output file: 
 
-To use **12** processors, on a sentence file named **test_sentences.txt** for example, you can run :
+To use **12** processors, on a sentence file named **test_sentences.txt** for example, you can run:
 
 ```
-sh run.sh --n_jobs 12 --test-mode --input test_sentences.txt
+bash run.sh --n_jobs 12 --test-mode --input test_sentences.txt
 ```
 
 ### Description of all arguments : 
