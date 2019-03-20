@@ -35,10 +35,11 @@ bash run.sh --n_jobs 12
 
 To do so, you need to specify that the script runs in test mode, specify the input file and the name of the output file: 
 
-To use **12** processors, on a sentence file named **test_sentences.txt** for example, you can run:
+To use **12** processors, on a sentence file named **test_sentences.txt**, and train on all the **sequoia-corpus** for example, 
+you can run:
 
 ```
-bash run.sh --n_jobs 12 --test-mode --input test_sentences.txt
+bash run.sh --n_jobs 12 --test_frac 1.0 --test-mode --input test_sentences.txt
 ```
 
 ### Description of all arguments : 
